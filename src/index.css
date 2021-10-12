@@ -1,13 +1,24 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Open Sans";
+  src: url(./OpenSans/OpenSansRegular/OpenSansRegular.ttf);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    repeating-linear-gradient(to right,
+      transparent 0 calc(25px - 1px),
+      lightgrey calc(25px - 1px) 25px),
+
+    repeating-linear-gradient(to bottom,
+      transparent 0 calc(25px - 1px),
+      lightgrey calc(25px - 1px) 25px) transparent;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
